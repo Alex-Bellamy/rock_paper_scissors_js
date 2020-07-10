@@ -1,0 +1,46 @@
+Arguments: 
+  /usr/local/Cellar/node/14.4.0/bin/node /usr/local/Cellar/yarn/1.22.4/libexec/bin/yarn.js install
+
+PATH: 
+  /Users/alb/.rvm/gems/ruby-2.6.3/bin:/Users/alb/.rvm/gems/ruby-2.6.3@global/bin:/Users/alb/.rvm/rubies/ruby-2.6.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/alb/.rvm/bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  14.4.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/alb/rock_paper_scissors_game_js/package.json: Unexpected end of JSON input
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:310:30)
+      at /usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "rock_paper_scissors_game_js",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "Alex_Bellamy <alexlbellamy@gmail.com>",
+    "license": "MIT",
+    "devDependencies": {
+      "cypress": "^4.10.0"
+    },
+    "dependencies": {
+      "superstatic": "^6.0.4"
+    },
+    "scripts": {
+  		"start": "superstatic src --port 3001",
+  		"cy:open": "yarn start & cypress open"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

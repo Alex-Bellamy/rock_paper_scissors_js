@@ -1,6 +1,6 @@
 describe('Game interface', () => {
     it('page successfully renders', () => {
-        cy.visit('/');
+        cy.visit('http://localhost:3001/');
         cy.get('#title').should('contain', 'Rock.Paper.Scissors');
         cy.get('#challenge').should('contain', 'Who will come out on top?!');
         cy.get('#rock').should('contain', 'Unleash Rock');
